@@ -1,1 +1,76 @@
-/*# sourceMappingURL=stylesheet.css.map */
+header {
+  background-color: rgb(56, 111, 76);
+}
+
+.main-navigation {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(243, 240, 203);
+  font-weight: 700;
+  font-size: 18px;
+}
+.main-navigation ul {
+  list-style-type: none;
+}
+.main-navigation a {
+  color: rgb(243, 240, 203);
+  text-decoration: none;
+}
+
+.secondary-nav p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(243, 240, 203);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.secondary-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 5vw;
+  margin-bottom: 10px;
+}
+
+.language {
+  display: flex;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.main-navigation .main-logo {
+  position: absolute;
+}
+.main-navigation .main-logo img {
+  width: 50%;
+}
+
+.navigation-links ul {
+  display: flex;
+}
+.navigation-links ul li {
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: rgb(243, 240, 203);
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(243, 240, 203);
+  padding: 10px 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 4px 2px;
+  border-color: rgb(56, 111, 76);
+  color: rgb(56, 111, 76);
+}
+
+.donate-btn {
+  background-color: rgb(242, 208, 15);
+}/*# sourceMappingURL=stylesheet.css.map */

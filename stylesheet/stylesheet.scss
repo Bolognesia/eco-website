@@ -1,0 +1,111 @@
+// LIST RESET
+@mixin list-reset{
+    ul{
+        list-style-type: none;
+    }
+
+    a{
+        color: $background_color_light;
+        text-decoration: none;
+    }
+}
+
+//COLOUR 
+$background_color_light: rgba(243, 240, 203, 1);
+$background_color_dark: rgba(56, 111, 76, 1);
+$cta_colour: rgba(242, 208, 15, 1);
+
+//MIXING PACKAGES
+    //TYPOGRAPHY
+@mixin headings_package{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    color: $background_color_light;
+}
+
+@mixin paragraph {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: $background_color_light;
+}
+    //BUTTONS
+@mixin buttons{
+    padding: 10px 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 4px 2px;
+    border-color: $background_color_dark
+}
+
+
+//MAIN NAV
+header{
+    background-color: $background_color_dark;
+}
+.main-navigation{
+    @include list-reset();
+    @include headings_package();
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.secondary-nav{
+    p {
+        @include headings_package();
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+.secondary-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5vw;
+    margin-bottom: 10px;
+}
+
+.language{
+    display: flex;;
+}
+
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .main-logo{
+        position: absolute;
+
+        img{
+            width: 50%;
+        }
+    }
+}
+
+
+
+.navigation-links ul{
+    display: flex;
+
+    li{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+// BUTTONS
+.btn{
+    background-color: $background_color_light;
+    @include headings_package();
+    @include buttons();
+    color: $background_color_dark;
+}
+
+.donate-btn{
+    background-color: $cta_colour;
+}
+
