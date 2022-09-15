@@ -8,35 +8,33 @@
     <link rel="stylesheet" href="./stylesheet/reset.css">
     <link rel="stylesheet" href="./stylesheet/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Raleway:wght@600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Raleway:wght@600;700;800;900&display=swap" rel="stylesheet"> 
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#header-loader').load('header.html');
+            $('#footer-loader').load('footer.html');
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <div class="secondary-nav">
-            <div class="language">
-                <img src="./resources/Feather Icon.svg" alt="language icon" class="icon">
-                <p>Mā</p>
+    <header id="header-loader"></header>
+    <main>
+        <div class="banner-section">
+            <div class="hero-image-wrapper">
+                <img src="./resources/hero-image.jpeg" alt="">
             </div>
-            <input class="btn" type="submit" value="Contact Us">
-            <input class="btn donate-btn" type="submit" value="Donate">
-        </div>
-
-        <div class="main-navigation">
-            <div class="main-logo">
-                <img src="./resources/logo-1.svg" alt="eco website logo">
-            </div>
-            <div class="navigation-links">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Our Work</a></li>
-                    <li><a href="">Resources</a></li>
-                    <li><a href="">Get Involved</a></li>
-                    <li><a href="">Media</a></li>
-                </ul>
+            <div class="text-over-image">
+                <h1>About Us</h1>
+                <p>ECO is a network of 45+ large and small environmental organisations based all around New Zealand.</p>
+                <p>We strive to empower and inform people to work for better management and protection of New Zealand’s forests, coasts, sea, rivers, land, atmosphere and our unique species.</p>
+                <input class="btn" type="submit" value="Contact Us">
+                <input class="btn donate-btn" type="submit" value="Donate">
             </div>
         </div>
-    </header>
+    </main>
+    <footer id="footer-loader"></footer>
+    
 </body>
 </html>

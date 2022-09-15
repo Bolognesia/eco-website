@@ -11,12 +11,21 @@
 }
 
 //COLOUR 
-$background_color_light: rgba(243, 240, 203, 1);
-$background_color_dark: rgba(56, 111, 76, 1);
-$cta_colour: rgba(242, 208, 15, 1);
+$background_color_light: rgba(243, 240, 203);
+$background_color_dark: rgba(56, 111, 76);
+$cta_colour: rgba(242, 208, 15);
+$light-green: rgba(167, 159, 25);
+$dark-green: rgba(122, 111, 2);
+
+
+body{
+    background-color: $background_color_light;
+}
 
 //MIXING PACKAGES
     //TYPOGRAPHY
+$font_body_size: 1em;
+
 @mixin headings_package{
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
@@ -30,20 +39,45 @@ $cta_colour: rgba(242, 208, 15, 1);
     font-size: 1em;
     color: $background_color_light;
 }
+
     //BUTTONS
 @mixin buttons{
     padding: 10px 40px;
     border-radius: 15px;
     text-align: center;
     margin: 4px 2px;
-    border-color: $background_color_dark
+    border-style: solid;
+    border-color: $background_color_dark;
+}
+
+//TYPOGRAPHY
+body{
+    h1{
+        @include headings_package();
+        font-size: $font_body_size * 2.25;
+        color: black;
+    }
+
+    h2{
+        @include headings_package();
+        font-size: $font_body_size * 1.5;
+    }
+
+    p{
+        @include headings_package();
+        color: black;
+        font-weight: 400;
+    }
 }
 
 
 //MAIN NAV
 header{
     background-color: $background_color_dark;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
+
 .main-navigation{
     @include list-reset();
     @include headings_package();
@@ -62,40 +96,55 @@ header{
 .secondary-nav{
     display: flex;
     justify-content: flex-end;
-    margin: 0 5vw;
+    margin: 0 40px;
     margin-bottom: 10px;
+
+    .language{
+        display: flex;
+        padding-right: 10px;
+    }
 }
 
-.language{
-    display: flex;;
-}
+
 
 .main-navigation{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: relative;
 
     .main-logo{
         position: absolute;
+        left: 40px;
+        top: -60px;
+        max-width: 30vw;
 
         img{
-            width: 50%;
+            width: 100%;
+            height: 100%;
         }
     }
 }
 
+.navigation-links { 
+    margin: 0 40px;
 
-
-.navigation-links ul{
-    display: flex;
+    ul{
+        display: flex;
+    }
 
     li{
         margin-left: 20px;
     }
+    
+    a:hover{
+        text-decoration: underline;
+        color: $cta_colour;
+    }
+
+    a:active{
+        color: $cta_colour;
+    }
 }
-
-
-
 
 // BUTTONS
 .btn{
@@ -107,5 +156,37 @@ header{
 
 .donate-btn{
     background-color: $cta_colour;
+}
+
+.btn:hover{
+    background-color: $background_color_dark;
+    color: $background_color_light;
+    cursor: pointer;
+    border-color: $background_color_light;
+    border-width: 3px;
+
+}
+
+//HERO IMAGE
+.hero-image-wrapper{
+    max-height: 300px;
+    position: relative;
+    
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.text-over-image{
+    position: absolute;
+    background-color: rgba(243, 240, 203, 0.5);
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    height: clump(300px, 20vw, 400px);
+    padding: 30px;
+    transform: translate(-50%, -50%);
 }
 

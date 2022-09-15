@@ -1,5 +1,35 @@
+body {
+  background-color: rgb(243, 240, 203);
+}
+
+body h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(243, 240, 203);
+  font-size: 2.25em;
+  color: black;
+}
+body h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(243, 240, 203);
+  font-size: 1.5em;
+}
+body p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(243, 240, 203);
+  color: black;
+  font-weight: 400;
+}
+
 header {
   background-color: rgb(56, 111, 76);
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .main-navigation {
@@ -30,31 +60,45 @@ header {
 .secondary-nav {
   display: flex;
   justify-content: flex-end;
-  margin: 0 5vw;
+  margin: 0 40px;
   margin-bottom: 10px;
 }
-
-.language {
+.secondary-nav .language {
   display: flex;
+  padding-right: 10px;
 }
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
 }
 .main-navigation .main-logo {
   position: absolute;
+  left: 40px;
+  top: -60px;
+  max-width: 30vw;
 }
 .main-navigation .main-logo img {
-  width: 50%;
+  width: 100%;
+  height: 100%;
 }
 
+.navigation-links {
+  margin: 0 40px;
+}
 .navigation-links ul {
   display: flex;
 }
-.navigation-links ul li {
+.navigation-links li {
   margin-left: 20px;
+}
+.navigation-links a:hover {
+  text-decoration: underline;
+  color: rgb(242, 208, 15);
+}
+.navigation-links a:active {
+  color: rgb(242, 208, 15);
 }
 
 .btn {
@@ -67,10 +111,40 @@ header {
   border-radius: 15px;
   text-align: center;
   margin: 4px 2px;
+  border-style: solid;
   border-color: rgb(56, 111, 76);
   color: rgb(56, 111, 76);
 }
 
 .donate-btn {
   background-color: rgb(242, 208, 15);
+}
+
+.btn:hover {
+  background-color: rgb(56, 111, 76);
+  color: rgb(243, 240, 203);
+  cursor: pointer;
+  border-color: rgb(243, 240, 203);
+  border-width: 3px;
+}
+
+.hero-image-wrapper {
+  max-height: 300px;
+  position: relative;
+}
+.hero-image-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.text-over-image {
+  position: absolute;
+  background-color: rgba(243, 240, 203, 0.5);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  height: clump(300px, 20vw, 400px);
+  padding: 30px;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=stylesheet.css.map */
