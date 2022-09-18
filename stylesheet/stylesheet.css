@@ -30,6 +30,7 @@ header {
   background-color: rgb(56, 111, 76);
   padding-bottom: 20px;
   padding-top: 20px;
+  z-index: 1;
 }
 
 .main-navigation {
@@ -78,6 +79,7 @@ header {
   left: 40px;
   top: -60px;
   max-width: 30vw;
+  z-index: 10;
 }
 .main-navigation .main-logo img {
   width: 100%;
@@ -128,9 +130,14 @@ header {
   border-width: 3px;
 }
 
-.hero-image-wrapper {
-  max-height: 300px;
+.banner-section {
   position: relative;
+}
+
+.hero-image-wrapper {
+  max-height: 800px;
+  position: relative;
+  z-index: -1;
 }
 .hero-image-wrapper img {
   height: 100%;
@@ -144,7 +151,83 @@ header {
   top: 50%;
   left: 50%;
   text-align: center;
-  height: clump(300px, 20vw, 400px);
-  padding: 30px;
+  padding: 20px;
   transform: translate(-50%, -50%);
+}
+
+.our-work {
+  background-color: rgb(56, 111, 76);
+  background-image: url("/resources/background-uneven.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+.our-work .our-work-text {
+  padding: 20px;
+}
+.our-work .our-work-text h1 {
+  color: rgb(243, 240, 203);
+  text-align: center;
+}
+.our-work .our-work-text p {
+  color: rgb(243, 240, 203);
+  max-width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  background-color: rgb(243, 240, 203);
+}
+
+.card {
+  background-color: rgb(243, 240, 203);
+  border: 2px solid rgb(56, 111, 76);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.card .card-image-wrapper {
+  flex: 1;
+  max-height: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card .card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.card h2 {
+  color: rgb(56, 111, 76);
+}
+.card .card-title {
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(251, 250, 244);
+  border: 1px solid rgb(56, 111, 76);
+  border-radius: 10px;
+}
+.card .read-more {
+  margin: 20px;
+  position: relative;
+}
+.card .read-more i {
+  position: absolute;
+  color: rgb(56, 111, 76);
 }/*# sourceMappingURL=stylesheet.css.map */
