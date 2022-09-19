@@ -103,7 +103,7 @@ header {
   color: rgb(242, 208, 15);
 }
 
-.btn {
+.button-web {
   background-color: rgb(243, 240, 203);
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -122,7 +122,7 @@ header {
   background-color: rgb(242, 208, 15);
 }
 
-.btn:hover {
+.button-web:hover {
   background-color: rgb(56, 111, 76);
   color: rgb(243, 240, 203);
   cursor: pointer;
@@ -151,7 +151,7 @@ header {
   top: 50%;
   left: 50%;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   transform: translate(-50%, -50%);
 }
 
@@ -186,6 +186,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
+  margin-bottom: 30px;
   background-color: rgb(243, 240, 203);
 }
 
@@ -224,10 +225,31 @@ header {
   border-radius: 10px;
 }
 .card .read-more {
+  display: flex;
   margin: 20px;
-  position: relative;
+  align-items: center;
+  justify-content: center;
 }
-.card .read-more i {
-  position: absolute;
-  color: rgb(56, 111, 76);
-}/*# sourceMappingURL=stylesheet.css.map */
+.card .read-more span {
+  padding: 10px 20px;
+}
+
+.take-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(122, 111, 2);
+  min-height: 500px;
+}
+.take-action h1, .take-action p {
+  color: rgb(243, 240, 203);
+  text-align: center;
+}
+.take-action p {
+  max-width: 60%;
+  margin: 10px auto;
+}
+.take-action .center-buttons {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=stylesheet-core.css.map */

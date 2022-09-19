@@ -149,7 +149,7 @@ header{
 }
 
 // BUTTONS
-.btn{
+.button-web{
     background-color: $background_color_light;
     @include headings_package();
     @include buttons();
@@ -160,7 +160,7 @@ header{
     background-color: $cta_colour;
 }
 
-.btn:hover{
+.button-web:hover{
     background-color: $background_color_dark;
     color: $background_color_light;
     cursor: pointer;
@@ -191,8 +191,9 @@ header{
     top: 50%;
     left: 50%;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     transform: translate(-50%, -50%);
+    
 }
 
 //OUR WORK
@@ -232,6 +233,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+    margin-bottom: 30px;
     background-color: $background_color_light;
 }
 
@@ -274,13 +276,40 @@ header{
     }
 
     .read-more{
+        display: flex;
         margin: 20px;
-        position: relative;
-    
-        i{
-            position: absolute;
-            color: $background_color_dark;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            padding: 10px 20px;
         }
+    }
+}
+
+//TAKE ACTION
+.take-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $dark-green;
+    min-height: 500px;
+
+
+    h1, p{
+        color: $background_color_light;
+        text-align: center;
+        
+    }
+
+    p{
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    .center-buttons{
+        display: flex;
+        justify-content: center;
     }
 }
 
