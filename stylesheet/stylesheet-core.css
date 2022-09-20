@@ -259,23 +259,26 @@ header {
   justify-content: center;
 }
 
-.get-involved-wrapper {
+.get-involved {
   background-color: rgb(56, 111, 76);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-.get-involved-wrapper h1, .get-involved-wrapper p {
+
+.get-involved-text h1, .get-involved-text p {
   color: rgb(243, 240, 203);
   text-align: center;
   max-width: 60%;
-  margin: 10px auto;
+  margin: 0 auto;
+}
+
+.get-involved-wrapper {
+  justify-content: center;
 }
 .get-involved-wrapper .icon-wrapper {
   display: flex;
 }
 .get-involved-wrapper .get-involved-options {
   display: flex;
+  flex-direction: column;
 }
 .get-involved-wrapper .get-involved-options .get-involved-flex {
   display: flex;
