@@ -63,6 +63,11 @@ body{
         font-size: $font_body_size * 1.5;
     }
 
+    h3{
+        @include headings_package();
+        font-size: $font_body_size * 1.25;
+    }
+
     p{
         @include headings_package();
         color: black;
@@ -299,12 +304,9 @@ header{
     h1, p{
         color: $background_color_light;
         text-align: center;
-        
-    }
-
-    p{
         max-width: 60%;
         margin: 10px auto;
+        
     }
 
     .center-buttons{
@@ -312,6 +314,55 @@ header{
         justify-content: center;
     }
 }
+
+//GET INVOLVED
+.get-involved-wrapper{
+    background-color: $background_color_dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+    h1, p{
+        color: $background_color_light;
+        text-align: center;
+        max-width: 60%;
+        margin: 10px auto;
+    }
+    
+    .icon-wrapper{
+        display: flex;
+    }
+    
+    .get-involved-options{
+        display: flex;
+
+        .get-involved-flex{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+    
+            p{
+                text-align: left;
+            }
+    
+            .button-web{
+                max-width: fit-content;
+            }
+            
+            .image-wrapper{
+                max-height: 400px;
+    
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
 
 
 
