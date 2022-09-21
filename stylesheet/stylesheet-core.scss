@@ -328,43 +328,34 @@ header{
         margin: 0 auto;
     }
 }
-.get-involved-wrapper{
-    justify-content: center;
-   
-    .icon-wrapper{
-        display: flex;
-    }
+   .get-involved-wrapper{
+    display: flex;
     
     .get-involved-options{
         display: flex;
         flex-direction: column;
+    
 
         .get-involved-flex{
             display: flex;
             flex-direction: column;
-            flex: 1;
+
+            .icon-wrapper{
+                display: flex;
+                flex-direction: row;
+            }
     
             p{
                 text-align: left;
+                color: $background_color_light;
             }
     
             .button-web{
                 max-width: fit-content;
             }
-            
-            .image-wrapper{
-                max-height: 400px;
-    
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
         }
     }
 }
-
-
+   
 
 

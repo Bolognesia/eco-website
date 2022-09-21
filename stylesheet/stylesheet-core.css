@@ -271,9 +271,6 @@ header {
 }
 
 .get-involved-wrapper {
-  justify-content: center;
-}
-.get-involved-wrapper .icon-wrapper {
   display: flex;
 }
 .get-involved-wrapper .get-involved-options {
@@ -283,22 +280,17 @@ header {
 .get-involved-wrapper .get-involved-options .get-involved-flex {
   display: flex;
   flex-direction: column;
-  flex: 1;
+}
+.get-involved-wrapper .get-involved-options .get-involved-flex .icon-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 .get-involved-wrapper .get-involved-options .get-involved-flex p {
   text-align: left;
+  color: rgb(243, 240, 203);
 }
 .get-involved-wrapper .get-involved-options .get-involved-flex .button-web {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-.get-involved-wrapper .get-involved-options .get-involved-flex .image-wrapper {
-  max-height: 400px;
-}
-.get-involved-wrapper .get-involved-options .get-involved-flex .image-wrapper img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }/*# sourceMappingURL=stylesheet-core.css.map */
