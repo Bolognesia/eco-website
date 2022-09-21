@@ -24,6 +24,13 @@ body h3 {
   color: rgb(243, 240, 203);
   font-size: 1.25em;
 }
+body h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(243, 240, 203);
+  font-size: 1.125em;
+}
 body p {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -261,6 +268,7 @@ header {
 
 .get-involved {
   background-color: rgb(56, 111, 76);
+  min-height: 900px;
 }
 
 .get-involved-text h1, .get-involved-text p {
@@ -268,29 +276,190 @@ header {
   text-align: center;
   max-width: 60%;
   margin: 0 auto;
+  padding: 30px;
 }
 
 .get-involved-wrapper {
   display: flex;
+  justify-content: space-between;
+  max-width: 1800px;
+}
+.get-involved-wrapper .image-wrapper {
+  max-width: 50vw;
+  margin-right: 80px;
+}
+.get-involved-wrapper .image-wrapper img {
+  border: 10px solid rgb(243, 240, 203);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .get-involved-wrapper .get-involved-options {
   display: flex;
   flex-direction: column;
+  max-width: 700px;
+  margin: 0 100px 0 100px;
+}
+.get-involved-wrapper .get-involved-options .icon-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 .get-involved-wrapper .get-involved-options .get-involved-flex {
   display: flex;
   flex-direction: column;
 }
-.get-involved-wrapper .get-involved-options .get-involved-flex .icon-wrapper {
-  display: flex;
-  flex-direction: row;
-}
 .get-involved-wrapper .get-involved-options .get-involved-flex p {
   text-align: left;
   color: rgb(243, 240, 203);
 }
-.get-involved-wrapper .get-involved-options .get-involved-flex .button-web {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+.get-involved-wrapper .get-involved-options .get-involved-flex span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gallery-title {
+  color: rgb(56, 111, 76);
+  text-align: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 50px;
+  margin: 50px auto 50px;
+  max-width: 1650px;
+}
+.gallery-container div {
+  padding: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.gallery-container div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.footer-nav div h4:hover, .footer-nav div p:hover {
+  text-decoration: underline;
+  color: rgb(242, 208, 15);
+}
+
+footer {
+  background-color: rgb(56, 111, 76);
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  color: rgb(243, 240, 203);
+  text-decoration: none;
+}
+footer .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+}
+footer .footer-menu p {
+  color: rgb(243, 240, 203);
+}
+footer .footer-menu .footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 0.7;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+footer .footer-menu .logo-footer {
+  margin-top: 70px;
+  margin-right: 100px;
+}
+footer .footer-menu .logo-footer .logo-footer-wrapper {
+  max-width: 8vw;
+  margin-left: 60px;
+}
+footer .footer-menu .logo-footer .logo-footer-wrapper img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+footer .footer-menu .logo-footer .footer-contact-us {
+  display: flex;
+}
+footer .footer-menu .logo-footer .footer-contact-us span {
+  margin-left: 10px;
+}
+
+.social-media {
+  background-color: rgb(243, 240, 203);
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-media .terms {
+  display: flex;
+}
+.social-media .icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.social-media p {
+  color: rgb(56, 111, 76);
+}
+
+.input-container {
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: rgb(243, 240, 203); /* IE10 */
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  max-width: 500px;
+  background-color: rgb(243, 240, 203);
+  border-radius: 10px;
+  margin: 0 100px 30px auto;
+  justify-content: center;
+}
+.input-container p {
+  color: rgb(56, 111, 76);
+  text-align: center;
+}
+.input-container .input {
+  text-align: center;
+}
+.input-container .input i {
+  border-radius: 0 5px 5px 0;
+}
+.input-container .input .icon {
+  max-height: 30px;
+  padding: 10px;
+  background: rgb(242, 208, 15);
+  color: rgb(56, 111, 76);
+  min-width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.input-container .input .icon :hover {
+  opacity: 0.9;
+}
+.input-container .input .input-field {
+  min-width: 300px;
+  padding: 8px;
+  outline: none;
+}
+.input-container .input .input-field:focus {
+  border: 2px solid rgb(56, 111, 76);
 }/*# sourceMappingURL=stylesheet-core.css.map */
